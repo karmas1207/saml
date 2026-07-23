@@ -22,7 +22,18 @@ export function NutritionTargets({ data, dayId }: { data: AppData; dayId: DayId 
         <div className="progress-track" role="progressbar" aria-label="Uppskattat protein idag" aria-valuemin={0} aria-valuemax={140} aria-valuenow={Math.min(consumed, 140)}><span style={{ width: `${progress}%` }} /></div>
         <p>{remaining > 0 ? <><b>Cirka {remaining} g</b> återstår till ditt lägsta dagsmål.</> : <><b>Proteinmålet är nått.</b> Bra jobbat!</>}</p>
       </article>
-      <p className="info-note"><Info size={17} /> Värdena är uppskattningar. Portionsstorlekar kan behöva justeras efter viktutveckling och aktivitetsnivå.</p>
+      <article className="portion-guide">
+        <h3>Snabb portionsguide</h3>
+        <div>
+          <p><strong>250 g kycklinglårfilé</strong><span>≈ 45–50 g protein</span></p>
+          <p><strong>1 burk tonfisk, 150 g avrunnen</strong><span>≈ 35 g protein</span></p>
+          <p><strong>250 g kvarg</strong><span>≈ 25 g protein</span></p>
+          <p><strong>4 ägg</strong><span>≈ 28 g protein</span></p>
+          <p><strong>250 g kokta linser</strong><span>≈ 20 g protein</span></p>
+          <p><strong>200 g nötfärs</strong><span>≈ 40 g protein</span></p>
+        </div>
+      </article>
+      <p className="info-note"><Info size={17} /> Värdena är uppskattningar och varierar mellan produkter. Måltidsplanen kan hamna över 160 g om allt markeras; justera i första hand mängden shake eller kvarg efter ditt faktiska behov och din viktutveckling.</p>
     </section>
   )
 }

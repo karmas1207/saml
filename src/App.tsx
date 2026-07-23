@@ -23,7 +23,7 @@ function App() {
       <a className="skip-link" href="#main-content">Hoppa till innehåll</a>
       <Header />
       {tab === 'training' ? <TrainingView data={data} onChange={changeData} onStartNewWeek={() => setData((current) => resetWeeklyData(current))} /> : <NutritionView data={data} onChange={changeData} />}
-      <footer><span>Workout 4 Karo</span><p>Små steg. Varje vecka.</p></footer>
+      <footer><span>Saml</span><p>Små steg. Varje vecka.</p></footer>
       <BottomNavigation active={tab} onChange={changeTab} />
     </div>
   )

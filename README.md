@@ -1,4 +1,4 @@
-# Workout 4 Karo
+# Saml
 
 En färdig, mobilanpassad webbapp för hemmaträning och kostplanering. Appen är helt på svenska, fungerar utan konto eller backend och sparar alla framsteg lokalt i webbläsaren.
 
@@ -29,9 +29,10 @@ npm run preview
 
 - Träningsprogram för veckans alla sju dagar.
 - Setspårning, övningsstatus, anteckningar och vilotimer på 60, 75 eller 90 sekunder.
-- Lokala, återanvändbara SVG-diagram för samtliga styrkeövningar.
+- Lokala, AI-genererade 3D-instruktionsbilder för samtliga styrkeövningar.
+- Färdiga övningskort kollapsas automatiskt och kan öppnas igen med en tydlig knapp.
 - Aktiv vila, promenader, veckostatistik och säker återställning av veckan.
-- Veckomeny, proteinräknare, daglig rutin och interaktiv inköpslista.
+- Veckomeny med konkreta portionsvikter, proteinräknare, portionsguide, daglig rutin och interaktiv inköpslista.
 - Viktlogg med startvikt, senaste vikt och total förändring.
 - Versionshanterad och validerad lagring i `localStorage`.
 - Tangentbordsnavigering, synliga fokusmarkeringar, god kontrast och stöd för `prefers-reduced-motion`.

@@ -11,7 +11,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error('Workout 4 Karo kunde inte visa sidan.', error, info)
+    console.error('Saml kunde inte visa sidan.', error, info)
   }
 
   render() {

@@ -54,7 +54,8 @@ export function WorkoutDay({ day, data, onToggleExercise, onToggleSet, onNoteCha
           <div className="exercise-list">
             {day.exercises.map((exercise) => {
               const key = `${day.id}:${exercise.id}`
-              return <ExerciseCard key={exercise.id} exercise={exercise} completed={Boolean(data.completedExercises[key])} sets={Array.from({ length: exercise.sets }, (_, index) => Boolean(data.completedSets[`${key}:${index}`]))} note={data.notes[key] ?? ''} onToggleExercise={() => onToggleExercise(exercise.id)} onToggleSet={(setIndex) => onToggleSet(exercise.id, setIndex)} onNoteChange={(note) => onNoteChange(exercise.id, note)} />
+              const completed = Boolean(data.completedExercises[key])
+              return <ExerciseCard key={`${exercise.id}:${completed}`} exercise={exercise} completed={completed} sets={Array.from({ length: exercise.sets }, (_, index) => Boolean(data.completedSets[`${key}:${index}`]))} note={data.notes[key] ?? ''} onToggleExercise={() => onToggleExercise(exercise.id)} onToggleSet={(setIndex) => onToggleSet(exercise.id, setIndex)} onNoteChange={(note) => onNoteChange(exercise.id, note)} />
             })}
           </div>
         </section>
